@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google-like Video Gallery</title>
+<style>
+/* Internal CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: #2c2929;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    background-image: url("bg of header 2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <header>
+        <img src="LOGO.png" width="150" height="150" style="border: #eef2f3; border-radius: 200px; border-color: aqua;background: origin 10px; padding-box :10px;">
+        <h1>Welcome to Daya Photography</h1>
+        <p>Capturing Moments, Creating Memories</p>
+    </header>
+    <nav>
+        <a href="1.home page.html">Home</a>
+        <a href="2.0 registartion page.html">Registration</a>
+        <a href="3. services.html">Services</a>
+        <a href="4. sample photos.html">Sample Photos</a>
+        <a href="5. contact  us.html">Contact</a>
+    </nav><br><br><br>
+
+    <div class="container">
+        <h1>Sample Videos</h1>
+        <div class="gallery">
+            <video controls>
+                <source src="sample v (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="sample v (2).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Add more video elements here -->
+        </div>
+    </div>
+
+</body>
+</html>
